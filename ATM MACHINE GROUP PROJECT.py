@@ -41,7 +41,7 @@ while True:
                     break
                 except ValueError:
                     print("Invalid input.")                    
-        elif action.lower() == "3":
+        elif action.lower() == "4":
             while True:
                 try:
                     print("Your Current Balance is:",str(cash) + ".")
@@ -49,7 +49,7 @@ while True:
                     break
                 except ValueError:
                     print("Invalid input.")                    
-        elif action.lower() == "4":
+        elif action.lower() == "3":
             sys.exit()
 else:
     print("Invalid input.")
