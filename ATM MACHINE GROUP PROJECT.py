@@ -13,7 +13,7 @@ cash=20000
 while True:
         action = input("What would you like to do? (1.Withdraw/2.Deposit/3.Check Balance/4.Exit): ")
         print("------------------------------")
-        if action.lower() == "1":
+        if action == "1":
             while True:
                 try:
                     withdraw_amount = int(input("How much would you like to withdraw? "))
@@ -32,7 +32,7 @@ while True:
                         print("-----------------------------")
                 except ValueError:
                     print("Invalid input.")
-        elif action.lower() == "2":
+        elif action == "2":
             while True:
                 try:
                     deposit_amount = int(input("How much would you like to deposit? "))
@@ -41,7 +41,7 @@ while True:
                     break
                 except ValueError:
                     print("Invalid input.")                    
-        elif action.lower() == "3":
+        elif action == "3":
             while True:
                 try:
                     print("Your Current Balance is:",str(cash) + ".")
@@ -49,7 +49,7 @@ while True:
                     break
                 except ValueError:
                     print("Invalid input.")                    
-        elif action.lower() == "4":
+        elif action == "4":
             sys.exit()
 else:
     print("Invalid input.")
